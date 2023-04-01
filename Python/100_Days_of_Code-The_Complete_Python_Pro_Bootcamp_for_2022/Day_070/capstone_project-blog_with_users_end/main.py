@@ -14,6 +14,7 @@ from flask_gravatar import Gravatar
 from functools import wraps
 from typing import List
 import os
+from sqlalchemy import dialects
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
